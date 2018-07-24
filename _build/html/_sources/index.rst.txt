@@ -6,6 +6,11 @@
 Welcome to ChartFactor documentation!
 =======================================
 
+Readme
+------
+
+3.0 yeaa!!!!
+
 Introduction
 ------------
 

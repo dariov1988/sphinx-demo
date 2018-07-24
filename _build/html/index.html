@@ -31,7 +31,44 @@
             
   <div class="section" id="welcome-to-chartfactor-documentation">
 <h1>Welcome to ChartFactor documentation!<a class="headerlink" href="#welcome-to-chartfactor-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>ChartFactor is a data visualization toolkit that helps create next generation data applications.
+ChartFactor provides the following benefits:
+•       Rich library of pre-packaged visualizations
+•       Data providers&nbsp;for several data technologies
+•       Extensibility
+•       Clear and concise programming model
+Let’s explore these areas in more detail.</p>
+</div>
+<div class="section" id="rich-library-of-pre-packaged-visualizations">
+<h2>Rich library of pre-packaged visualizations<a class="headerlink" href="#rich-library-of-pre-packaged-visualizations" title="Permalink to this headline">¶</a></h2>
+<p>Data visualizations, even simple bars, can be time consuming to implement when taking into account details such as labels, legends, tooltips, colors, axis display, between others.&nbsp; We also need to consider animation when users interact with their data.
+ChartFactor not only removes the work of programmatically binding the data to the chart, but also provides sensible defaults for many out-of-the-box visualizations to light up powerful visualizations in minutes.</p>
+</div>
+<div class="section" id="data-providers-for-many-data-technologies">
+<h2>Data providers for many data technologies<a class="headerlink" href="#data-providers-for-many-data-technologies" title="Permalink to this headline">¶</a></h2>
+<p>It is common for modern data environments to include several data source technologies.&nbsp; For example, data for log analysis may reside in&nbsp;ElasticSearch&nbsp;while data obtained from business operations may reside in big data stores such as&nbsp;Impala,&nbsp;Dremio, or behind a BI product like&nbsp;Zoomdata.
+ChartFactor encapsulates interactions with these technologies behind data provider implementations to enable obtaining aggregate or raw data in a uniform fashion.&nbsp; Developers can also plug in their own data providers if needed.
+The ChartFactor core components are separate from protocols, applications, and other packages, enabling data provider upgrades and new feature additions to be accomplished faster and with minimal retesting of the entire data application.</p>
+</div>
+<div class="section" id="extensibility">
+<h2>Extensibility<a class="headerlink" href="#extensibility" title="Permalink to this headline">¶</a></h2>
+<p>New data source technologies appear frequently.&nbsp; Visualization libraries are constantly evolving to provide better user experience and performance.&nbsp; ChartFactor allows developers to take advantage of their favorite visualization libraries without limitation.&nbsp; It also allows developers to create their own data providers that use technology-specific query libraries.</p>
+</div>
+<div class="section" id="clear-and-concise-programming-model">
+<h2>Clear and concise programming model<a class="headerlink" href="#clear-and-concise-programming-model" title="Permalink to this headline">¶</a></h2>
+<p>Several asynchronous programming models exist to interact with backend systems.&nbsp; Examples are callbacks, promises, and generators.&nbsp; The typical implementation invokes a backend query API and provides a callback function to process results and handle errors.&nbsp; Under this model, it is common to see one callback calling the next callback in a chain that quickly becomes hard to read and maintain.
+To simplify this model, ChartFactor provides a declarative way to specify data aggregations and how visualizations should be rendered.&nbsp; For example, on the data side, developers can specify how data is grouped, sorted, limited, what metrics are aggregated, what operation is used in the aggregation.&nbsp; On the visualization side, developers can specify the type of chart to render and all its visualization details.
+This declarations become a “program” that ChartFactor then executes in an efficient way.&nbsp; ChartFactor will query the data, wait for the data to be returned, and render visualizations according to the declarations provided.</p>
+</div>
+<div class="section" id="what-are-the-innovations-that-chartfactor-brings-to-data-application-developers">
+<h2>What are the innovations that ChartFactor brings to data application developers<a class="headerlink" href="#what-are-the-innovations-that-chartfactor-brings-to-data-application-developers" title="Permalink to this headline">¶</a></h2>
+<p>ChartFactor (patent pending) simplifies the development of data applications through the following innovative components:
+1) A&nbsp;computational DAG (directed acyclic graph) that allows developers to declare operations for later execution
+2) An optimiz</p>
 <div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 <div class="section" id="indices-and-tables">
@@ -51,7 +88,15 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="#">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Welcome to ChartFactor documentation!</a></li>
+<li><a class="reference internal" href="#">Welcome to ChartFactor documentation!</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#rich-library-of-pre-packaged-visualizations">Rich library of pre-packaged visualizations</a></li>
+<li><a class="reference internal" href="#data-providers-for-many-data-technologies">Data providers for many data technologies</a></li>
+<li><a class="reference internal" href="#extensibility">Extensibility</a></li>
+<li><a class="reference internal" href="#clear-and-concise-programming-model">Clear and concise programming model</a></li>
+<li><a class="reference internal" href="#what-are-the-innovations-that-chartfactor-brings-to-data-application-developers">What are the innovations that ChartFactor brings to data application developers</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 <div class="relations">

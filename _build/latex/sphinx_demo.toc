@@ -1,0 +1,9 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Readme}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Introduction}{3}{chapter.2}
+\contentsline {chapter}{\numberline {3}Rich library of pre-packaged visualizations}{5}{chapter.3}
+\contentsline {chapter}{\numberline {4}Data providers for many data technologies}{7}{chapter.4}
+\contentsline {chapter}{\numberline {5}Extensibility}{9}{chapter.5}
+\contentsline {chapter}{\numberline {6}Clear and concise programming model}{11}{chapter.6}
+\contentsline {chapter}{\numberline {7}What are the innovations that ChartFactor brings to data application developers}{13}{chapter.7}
+\contentsline {chapter}{\numberline {8}Indices and tables}{15}{chapter.8}
